@@ -1,0 +1,79 @@
+[gd_scene load_steps=9 format=3 uid="uid://dl6mwb0ha2gvo"]
+
+[ext_resource type="PackedScene" uid="uid://k3nrtnn5eodx" path="res://scenes/partyMember.tscn" id="1_10jbx"]
+
+[sub_resource type="BoxMesh" id="BoxMesh_il4is"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_ex57q"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_bbh72"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_is7ak"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_o7ayc"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_cp8mt"]
+
+[sub_resource type="Curve3D" id="Curve3D_5cfwk"]
+_data = {
+"points": PackedVector3Array(0, 0, 0, 0, 0, 0, -6.01643, 0.610635, -0.0492992, 0, 0, 0, 0, 0, 0, -4.43028, 0.610635, -0.0366098, 0, 0, 0, 0, 0, 0, -2.92028, 0.610635, -0.0112316, 0, 0, 0, 0, 0, 0, -1.34683, 0.610635, 0.0268359, 0, 0, 0, 0, 0, 0, 0.340829, 0.610635, -0.0873667, 0, 0, 0, 0, 0, 0, 1.97773, 0.610635, -0.023921, 0, 0, 0, 0, 0, 0, 3.28471, 0.610635, -0.061988, 0, 0, 0, 0, 0, 0, 4.65513, 0.610635, -0.0873667, 0, 0, 0, 0, 0, 0, 5.49262, 0.610635, -0.112745, 0, 0, 0, 0, 0, 0, 5.47993, 0.700574, -1.02636, 0, 0, 0, 0, 0, 0, 4.52518, 0.712067, -1.1025, 0, 0, 0, 0, 0, 0, 3.27374, 0.838962, -1.1025, 0, 0, 0, 0, 0, 0, 1.95909, 0.917868, -1.1025, 0, 0, 0, 0, 0, 0, 0.328422, 1.10569, -1.03905, 0, 0, 0, 0, 0, 0, -1.35281, 1.23859, -1.07712, 0, 0, 0, 0, 0, 0, -2.38936, 1.30721, -1.07712, 0, 0, 0, 0, 0, 0, -3.52704, 1.43848, -1.02636, 0, 0, 0, 0, 0, 0, -3.51667, 1.51676, -1.96536, 0, 0, 0, 0, 0, 0, -2.27313, 1.54112, -1.97805, 0, 0, 0, 0, 0, 0, -1.18187, 1.54112, -2.00343, 0, 0, 0, 0, 0, 0, 0.0616678, 1.54112, -2.0288, 0, 0, 0, 0, 0, 0, 1.3052, 1.54112, -2.07956, 0, 0, 0, 0, 0, 0, 2.62487, 1.54112, -2.05418, 0, 0, 0, 0, 0, 0, 3.60194, 1.54112, -2.04149, 0, 0, 0, 0, 0, 0, 4.66782, 1.54112, -2.06687),
+"tilts": PackedFloat32Array(0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0)
+}
+point_count = 25
+
+[node name="Node3D" type="Node3D"]
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="."]
+transform = Transform3D(10, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0)
+mesh = SubResource("BoxMesh_il4is")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="MeshInstance3D"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="MeshInstance3D/StaticBody3D"]
+shape = SubResource("BoxShape3D_ex57q")
+
+[node name="MeshInstance3D2" type="MeshInstance3D" parent="."]
+transform = Transform3D(7.96956, 0.0871557, 0, -0.697246, 0.996195, 0, 0, 0, 1, 0.966886, 0.425506, -1)
+mesh = SubResource("BoxMesh_il4is")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="MeshInstance3D2"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="MeshInstance3D2/StaticBody3D"]
+shape = SubResource("BoxShape3D_bbh72")
+
+[node name="MeshInstance3D5" type="MeshInstance3D" parent="."]
+transform = Transform3D(-7.99878, -0.0174524, 8.74228e-08, -0.139619, 0.999848, 0, -6.99276e-07, -1.52574e-09, -1, 1.04014, 0.924126, -2)
+mesh = SubResource("BoxMesh_il4is")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="MeshInstance3D5"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="MeshInstance3D5/StaticBody3D"]
+shape = SubResource("BoxShape3D_is7ak")
+
+[node name="MeshInstance3D3" type="MeshInstance3D" parent="."]
+transform = Transform3D(-8.73695e-08, -1.52551e-09, -1, -0.069799, 0.999391, 0, 1.99878, 0.0348995, -4.37114e-08, 5.5, 0.0366595, -0.51015)
+mesh = SubResource("BoxMesh_il4is")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="MeshInstance3D3"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="MeshInstance3D3/StaticBody3D"]
+shape = SubResource("BoxShape3D_o7ayc")
+
+[node name="MeshInstance3D4" type="MeshInstance3D" parent="."]
+transform = Transform3D(-8.73695e-08, -1.52551e-09, -1, -0.069799, 0.999391, 0, 1.99878, 0.0348995, -4.37114e-08, -3.49252, 0.812354, -1.51015)
+mesh = SubResource("BoxMesh_il4is")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="MeshInstance3D4"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="MeshInstance3D4/StaticBody3D"]
+shape = SubResource("BoxShape3D_cp8mt")
+
+[node name="Path3D" type="Path3D" parent="."]
+curve = SubResource("Curve3D_5cfwk")
+
+[node name="PathFollow3D" type="PathFollow3D" parent="Path3D"]
+transform = Transform3D(0.99993, 0.00277697, -0.0110031, -0.00368162, 0.996532, -0.0830706, 0.0107343, 0.0831054, 0.996482, -3.52132, 1.48159, -1.54352)
+progress = 22.0
+
+[node name="Node3D" parent="Path3D/PathFollow3D" instance=ExtResource("1_10jbx")]
+transform = Transform3D(-0.00799997, 0, 0.999968, 0, 1, 0, -0.999968, 0, -0.00799997, 0.00403031, -0.0403847, 0.00896263)
